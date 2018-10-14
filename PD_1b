@@ -1,0 +1,10 @@
+[Port lotniczy|Nazwa;Położenie;Ilość możliwych jednoczesnych lotów], [Wieża kontroli ruchu lotniczego]1<>-1..*[Kontroler lotu], 
+[Port lotniczy]++-1[Wieża kontroli ruchu lotniczego], 
+[Lot]1..*-<>1[Linia lotnicza], 
+[Port lotniczy]0..*-2..*[Lot], 
+[Personel]<>-1..4[Pilot], 
+[Personel]<>-0..4[Stewardessa], 
+[Lot|Numer;Data]<>1-1[Personel]
+[Wieża kontroli ruchu lotniczego]1-obsługuje-0..*[Lot]
+
+http://yuml.me/edit/7d995491
