@@ -1,0 +1,5 @@
+[Brygada]<>--[Pracownik]
+[Osprzęt]^-[Osprzęt ciężki]
+[Osprzęt]^-[Osprzęt lekki]
+[Pracownik|wyuczony zawód]1--pobiera 0..3[Osprzęt lekki]
+[Pracownik]--jest uprawniony[Osprzęt ciężki]
